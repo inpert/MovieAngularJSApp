@@ -27,8 +27,9 @@ namespace MovieAngularJSApp
 			services.AddMvc();
 
 			// Register Entity Framework
-			services.AddEntityFramework(Configuration)
-				.AddSqlServer()
+			//services.AddEntityFramework(Configuration)
+            services.AddEntityFramework()
+                .AddSqlServer()
 				.AddDbContext<MoviesAppContext>();
 		}
 
